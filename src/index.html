@@ -1,0 +1,664 @@
+<style>
+    .body {
+      font-family: "Poppins", sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    .first {
+      width: 100vw;
+      /* height: 50vh; */
+      position: relative;
+      /* background-color: blue; */
+      display: flex;
+      flex-direction: column;
+      /* align-items: center; */
+      /* justify-content: center; */
+      /* padding-right: 5rem; */
+    }
+    .first-max {
+      background-image: url(https://github.com/Gbolahan2003/issl/blob/main/src/images/Rectangle125.png?raw=true);
+      height: 90vh;
+      display: flex;
+      /* justify-content: center; */
+      align-items: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100vw;
+    }
+    .hero {
+      display: flex;
+    }
+    .hero-1 {
+      padding-left: 2rem;
+      width: 70vw;
+    }
+
+    .first-2 {
+      color: #fff;
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+    }
+    .main-nav {
+      color: #fff;
+      font-size: 2.5rem;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.8s;
+    }
+    .main-nav {
+    }
+    .main-nav:hover,
+    .main-nav:active {
+      transform: scale(1.1);
+      color: rgb(182, 172, 190);
+    }
+
+    .sec {
+      background-color: #fff;
+      padding-bottom: 0.2rem;
+      padding-top: 2rem;
+    }
+
+    .second {
+      padding-right: 2rem;
+      /* width: 95vw; */
+      display: flex;
+      margin: 2rem;
+      /* background-color: red; */
+      align-items: center;
+      justify-content: center;
+      margin-top: 7rem;
+      margin-bottom: 10rem;
+      flex-direction: column;
+    }
+
+    .header {
+      /* margin: 5rem; */
+      font-size: 1.3rem;
+      margin: 2rem;
+      margin-bottom: 5rem;
+      text-align: center;
+    }
+    .girl {
+      margin: 1rem;
+    }
+    .grid-2-cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    .grid-3-cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2rem;
+      border: none;
+    }
+    .grid-4-cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .sec {
+      width: 100vw;
+    }
+
+    .card {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin: 1rem;
+      border: none;
+    }
+
+    .ca-1 {
+      font-weight: 500;
+      font-size: 1.6rem;
+    }
+
+    .ca-3 {
+      font-weight: 500;
+      margin-top: auto;
+    }
+
+    .shevron {
+      margin-left: 0.3rem;
+      text-decoration: none;
+      font-size: 1.4rem;
+      color: rgb(255, 24, 24);
+      transition: all 1s;
+    }
+    .shevron:hover,
+    .shevron:active {
+      transform: scale(1.1);
+    }
+
+    .third {
+      display: flex;
+      margin: 0;
+      justify-content: center;
+      align-items: center;
+      /* background-color: red; */
+    }
+
+    .third-1 {
+      margin: 0;
+      /* padding: 3rem; */
+    }
+
+    .three-2 {
+      margin-left: 3rem;
+    }
+    .im {
+      width: 35rem;
+    }
+    .death {
+      margin-top: 1.5rem;
+    }
+    .ca {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .hi {
+      background-color: #f5070f;
+      width: 80px;
+      height: 2px;
+    }
+
+    .hero {
+      display: flex;
+    }
+
+    .forth {
+      padding: 2rem;
+      padding-top: 3rem;
+      margin-top: 5rem;
+      background-color: #fff;
+    }
+    .forth-alpha {
+      margin-top: 2.5rem;
+      width: 60vw;
+      margin-bottom: 3.5rem;
+    }
+    .for-1 {
+      background-color: #3a3a85;
+      color: #fff;
+    }
+    .for-2 {
+      background: #f1f1f1;
+    }
+    .fo-1 {
+      margin-top: 0.5rem;
+    }
+    .for {
+      padding: 1rem;
+      border-radius: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding-bottom: 2rem;
+    }
+    .fo-2 {
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+
+    .fo-4 {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      padding-bottom: 2.3rem;
+      gap: 0.7rem;
+      background-color: #f1f1f1;
+      border-radius: 19.5px;
+    }
+
+    .forth-3 {
+      margin-top: 3rem;
+    }
+    .f {
+      margin-top: 0.5rem;
+    }
+    .fifth {
+      background-color: #fff;
+      padding: 2rem;
+      padding-top: 3rem;
+      padding-bottom: 15rem;
+    }
+    .fyi {
+      /* width: 20rem; */
+      position: relative;
+    }
+    .y {
+      width: 100%;
+      position: absolute;
+      /* z-index: -1; */
+    }
+
+    .y-2 {
+      background-color: #fff;
+      transform: translate(60%, 10%);
+      /* width: 19rem; */
+      /* width: inherit; */
+      padding: 1rem;
+      padding-right: -1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    .cat {
+      margin-top: 0.5rem;
+      font-weight: 500;
+    }
+    .h {
+      margin-bottom: 2rem;
+    }
+
+    .sec,
+    .third,
+    .forth,
+    .fifth {
+      padding: 2rem;
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    @media (max-width: 71em) {
+      .first-2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+    }
+
+    @media (max-width: 66em) {
+      .third-1 {
+        margin: 0;
+        display: flex;
+        gap: 0.5rem;
+      }
+      .three-2 {
+        margin: 0;
+      }
+    }
+
+    @media (max-width: 61em) {
+      .third-1 {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.1rem;
+      }
+    }
+    @media (max-width: 55em) {
+      .header {
+        font-size: 1rem;
+      }
+      .girl {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0.6rem;
+      }
+      .ca-2 {
+        font-size: 0.8rem;
+      }
+    }
+    @media (max-width: 51em) {
+      .first-2 {
+        font-size: 2rem;
+      }
+      .frst-3 {
+        font-size: 1.5rem;
+      }
+    }
+    @media (max-width: 47em) {
+      .grid-3-cols {
+        gap: 0.5rem;
+      }
+    }
+    @media (max-width: 45em) {
+      .second {
+        display: flex;
+        flex-direction: column;
+        margin: 0.3rem;
+        justify-content: center;
+        align-items: center;
+      }
+      .death {
+        /* margin: 1rem;
+  padding: 0.5rem; */
+      }
+      .im {
+        width: 80vw;
+      }
+    }
+
+    @media (max-width: 43em) {
+      .grid-3-cols {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        row-gap: 1.3rem;
+      }
+    }
+    @media (max-width: 43em) {
+      .grid-2-cols,
+      .grid-3-cols {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        row-gap: 1.3rem;
+      }
+    }
+    @media (max-width: 34em) {
+      .first-2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.8rem;
+      }
+      .main-nav {
+        font-size: 1rem;
+      }
+    }
+    @media (max-width: 37em) {
+      .forth-alpha {
+        /* font-size: 0.9rem; */
+        width: 90vw;
+      }
+    }
+    @media (max-width: 29em) {
+      .grid-2-cols,
+      .grid-3-cols {
+        grid-template-columns: 1fr;
+        row-gap: 2.3rem;
+
+        /* row-gap: 1.3rem; */
+      }
+      .l {
+        margin-bottom: 2rem;
+      }
+    }
+
+    /* @media (max-width: ) {
+}
+@media (max-width: ) {
+}
+@media (max-width: ) {
+} */
+  </style>
+
+  <div>
+    <div class="body">
+      <div class="first-max">
+        <div class="hero">
+          <div class="hero-1">
+            <div class="first-2">
+              Developing softwares that adapt to market demand
+            </div>
+            <div class="first-3">
+              <a href="#" class="main-nav"> Our Products > </a>
+            </div>
+          </div>
+
+          <div class="hero-2"></div>
+        </div>
+      </div>
+
+      <div class="sec">
+        <div class="second">
+          <h1 class="header">
+            Integrated Software Services Ltd. (ISSL) is a software development
+            and consulting company whose core purpose is to help companies
+            improve business performance through;
+          </h1>
+
+          <div class="grid-3-cols girl">
+            <div class="card card-1">
+              <img
+                class="d"
+                src="https://github.com/Gbolahan2003/issl/blob/main/src/images/Rectangle126.png?raw=true"
+              />
+              <div class="ca-1">Strategy</div>
+              <div class="ca-2">
+                For businesses to thrive in the digital era, it takes a
+                formula that puts organizational evolution at the forefront.
+                We'll work with you on pragmatic strategies for organizational
+                change that increase your agility, resilience and ability to
+                compete.
+              </div>
+              <div class="ca-3">
+                Our Strategy process
+                <a href="#" class="shevron"> > </a>
+              </div>
+            </div>
+
+            <div class="card card-2">
+              <img
+                src="https://github.com/Gbolahan2003/issl/blob/main/src/images/Rectangle127.png?raw=true
+              "
+              />
+              <div class="ca-1">Design</div>
+              <div class="ca-2">
+                Embedding customer experience into products and design is more
+                important than ever. We align product thinking with platform
+                expertise and digital execution to deliver exceptional
+                customer experiences powered by integrated technology and
+                design.
+              </div>
+              <div class="ca-3">
+                Our Strategy process
+                <a href="#" class="shevron"> > </a>
+              </div>
+            </div>
+
+            <div class="card card-3">
+              <img
+                src="https://github.com/Gbolahan2003/issl/blob/main/src/images/Rectangle128.png?raw=true
+             "
+              />
+              <div class="ca-1">Development</div>
+              <div class="ca-2">
+                When change is constant it demands new levels of business
+                agility. We modernize your operations, platforms, development
+                and delivery practices to improve customer experience and
+                deliver business value faster.
+              </div>
+              <div class="ca-3">
+                Our Development process
+                <a href="#" class="shevron"> > </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="third">
+        <div class="third-1 grid-2-cols">
+          <div class="three-1">
+            <div class="blah">
+              <div class="ca-1 hed">How it is all comes together</div>
+              <p class="hi"></p>
+              <div class="death">
+                By developing a pragmatic strategy for your organizational
+                change that increase your agility, resilience and ability to
+                compete, aligned with product thinking and digital execution
+                to deliver exceptional customer experiences powered by
+                integrated technology and design, we modernize your
+                operations, platforms, development and delivery practices to
+                improve customer experience and deliver business value faster.
+              </div>
+              <div class="ca-3 ca">
+                What we do
+                <a href="#" class="shevron"> > </a>
+              </div>
+            </div>
+          </div>
+          <div class="three-2">
+            <img
+              class="im"
+              src="https://github.com/Gbolahan2003/issl/blob/main/src/images/Rectangle130.png?raw=true"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="forth">
+        <div class="forth-1">
+          <div class="ca-1">Our Solutions</div>
+          <p class="hi"></p>
+        </div>
+
+        <div class="forth-alpha">
+          We are committed to providing flexible, low-cost solutions to our
+          customers that will help make their businesses run more smoothly and
+          profitably.
+        </div>
+
+        <div class="forth-2">
+          <div class="forth-2-1 grid-2-cols">
+            <div class="for-1 for">
+              <div class="fo-1">
+                <img
+                  src="https://github.com/Gbolahan2003/issl/blob/main/src/images/Group944.png?raw=true"
+                />
+              </div>
+              <div class="fo-2">Stock Broking and Financial Services</div>
+              <div class="fo-3">
+                iBroker is an integrated investment management, accounting,
+                transaction handling, customer service and management
+                reporting system
+              </div>
+            </div>
+
+            <div class="for-2 for">
+              <div class="fo-1">
+                <img
+                  src="https://github.com/Gbolahan2003/issl/blob/main/src/images/Group940.png?raw=true"
+                />
+              </div>
+              <div class="fo-2">Strong Authentication</div>
+              <div class="fo-3">
+                Our strong authentication solutions are designed to protect
+                your business, employees and customers across a range of
+                different industries.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="forth-3">
+          <div class="grid-3-cols">
+            <div class="fo-4">
+              <div class="fo--1">
+                <img
+                  class="f"
+                  src="https://github.com/Gbolahan2003/issl/blob/main/src/images/Group943.png?raw=true"
+                />
+              </div>
+              <div class="fo-2">Banking</div>
+              <div class="fo--1">
+                To retain current clients and attract new customers, you need
+                to offer your clients the best, simplified and affordable
+                solutions to bank online.
+              </div>
+            </div>
+            <div class="fo-4">
+              <div class="fo--1">
+                <img
+                  class="f"
+                  src="https://github.com/Gbolahan2003/issl/blob/main/src/images/Group942.png?raw=true"
+                />
+              </div>
+              <div class="fo-2">Biometris</div>
+              <div class="fo--1">
+                integrate a low-cost biometric verification system into your
+                technology platform that will help you improve your security
+                and boost your profitability.
+              </div>
+            </div>
+            <div class="fo-4">
+              <div class="fo--1">
+                <img
+                  class="f"
+                  src="https://github.com/Gbolahan2003/issl/blob/main/src/images/Group942.png?raw=true"
+                />
+              </div>
+              <div class="fo-2">CMR Solutions</div>
+              <div class="fo--1">
+                We deploy the award winning genesisworld CRM from our CRM
+                partner, CAS-CRM, to provide flexible solutions suitable to
+                your needs.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fifth">
+        <div class="fifth-1">
+          <div class="ca-1">Explore our Products</div>
+          <p class="hi l"></p>
+
+          <div class="fifth-2 grid-3-cols">
+            <div class="fyi">
+              <div class="y-1">
+                <img
+                  class="y"
+                  src="https://github.com/Gbolahan2003/issl/blob/main/src/images/Rectangle132.png?raw=true"
+                />
+              </div>
+              <div class="y-2">
+                <div class="cat">
+                  Do more than banking with our IntegraBanking Application
+                </div>
+                <div>
+                  Explore product
+                  <a href="#" class="shevron"> > </a>
+                </div>
+              </div>
+            </div>
+            <div class="fyi">
+              <div class="y-1">
+                <img
+                  class="y"
+                  src="https://github.com/Gbolahan2003/issl/blob/main/src/images/Rectangle132.png?raw=true"
+                />
+              </div>
+              <div class="y-2">
+                <div class="cat">
+                  Digital onboarding processes for SME and Corporate clients
+                </div>
+                <div>
+                  Explore product
+                  <a href="#" class="shevron"> > </a>
+                </div>
+              </div>
+            </div>
+            <div class="fyi">
+              <div class="y-1">
+                <img
+                  class="y"
+                  src="https://github.com/Gbolahan2003/issl/blob/main/src/images/Rectangle132.png?raw=true"
+                />
+              </div>
+              <div class="y-2">
+                <div class="cat">
+                  Online banking transaction with mobile banking application
+                </div>
+                <div>
+                  Explore product
+                  <a href="#" class="shevron"> > </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

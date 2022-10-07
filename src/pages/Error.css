@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.img{
+    margin: auto;
+    width: 65%;
+}
+.img img{
+    width: 107vh;
+    margin-bottom: 20px;
+}
+.page{
+    margin: auto;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+}

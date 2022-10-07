@@ -1,0 +1,11 @@
+*{
+    padding:0;
+    border: 0;
+    box-sizing: border-box;
+}
+.hero-section{
+    background-color: blue;
+    width: 100%;
+    padding: 20px;
+    height: 30vh;
+}
